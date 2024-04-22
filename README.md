@@ -1,12 +1,11 @@
-create table card(
-id int PRIMARY KEY,
-amount decimal(8,3),
-cardnumber varchar(20)
+create table employee(
+id int,
+name varchar(20),
+streetaddress varchar(30),
+city varchar(20),
+state varchar(20),
+zipcode varchar(20),
+country varchar(20)
 )
 
-create table bankcheck(
-id int PRIMARY KEY,
-amount decimal(8,3),
-checknumber varchar(20)
-)
-
+select * from employee

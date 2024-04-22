@@ -2,9 +2,10 @@ package com.hibinheritance.model;
 
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity
-@DiscriminatorValue("cc")
+@Table(name="card")
 public class CreditCard extends Payment{
 
     private String cardnumber;

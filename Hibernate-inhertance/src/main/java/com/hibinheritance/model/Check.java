@@ -1,11 +1,11 @@
 package com.hibinheritance.model;
 
-import jakarta.persistence.DiscriminatorValue;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity
-@DiscriminatorValue("ch")
-// cc & ch are the values going to use in pmode column of payment db. for check & creditcard
+@Table(name="bankcheck")
 public class Check extends Payment {
 
     private String checknumber;
